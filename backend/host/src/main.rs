@@ -16,9 +16,7 @@ async fn main() {
     // Obtain the default prover.
     let prover = default_prover();
 
-    // Produce a receipt by proving the specified ELF binary.
-    println!("HELLO THERE I'M COMMITING HERE AYOOOOOOO");
-    
+    // Produce a receipt by proving the specified ELF binary.    
     let receipt = prover.prove(env, HELLO_GUEST_ELF).unwrap().receipt;
 
     // Extract journal of receipt
